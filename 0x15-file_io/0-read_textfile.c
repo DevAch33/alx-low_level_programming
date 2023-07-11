@@ -5,7 +5,7 @@
  * @filename : name of file to read
  * @letters : number of bytes to read
  *
- * return: number bytes read printed
+ * Return: number bytes read printed
  * if filename is NULL return 0;
  * if write fails or does not write the expected amount of bytes, return 0;
  * fd : File descriptor

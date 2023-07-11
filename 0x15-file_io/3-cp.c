@@ -39,7 +39,6 @@ int main(int ac, char *av[])
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
-
 	file_from = open(av[1], O_RDONLY);
 	file_to = open(av[2], O_CREAT | O_WRONLY | O_TRUNC | O_APPEND, 0664);
 	error_file(file_from, file_to, av);
@@ -55,7 +54,6 @@ int main(int ac, char *av[])
 		if (nwr == -1)
 			error_file(0, -1, av);
 	}
-
 	err_close = close(file_from);
 
 	if (err_close == -1)
